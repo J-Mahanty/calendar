@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <h2 class="shortcut"></h2>
+
+        <img 
+            class="left-arrow-month" 
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAehJRE
+                FUSEvFVtFRwzAMlTahk0A3oZMAk1AmKUxCNxF5PsunKFLshMvVd71+2PHTe3qSxfSgxQ/Cpc3AIvJERC9EhP97DfzOzN9
+                bSAwBV7BXInpbuRxBAPxrJIhV4EHAKJYrEX0wsyqyOJMCV9BblVQ/BKMfMAOregaS4/c8SQ9VdAH0nIGHwPXCX3fJpSdh
+                ECzAw+8yYDCFgbAg2fuocYL0hMwXwCLyaSTbBGqDExEEq2a8MvPF7s+ARQQswRYLJXIaZerPVeYggTsXkntgyxbGSGsTy
+                ngWCbh6BYY86xkPjENw6EIaJ2MJkKfk9xQREfXLTMH2oZM5za31wCCwzXVT0QKjBsEECyWAJjBbznjYa9I1CV16HKF2bw
+                Z88oUfgIYqexVcT2hKWmArSQRs99PURvLLVFteySzHoaNdbY5KHaZwj7ka8x3makpaYJRRWHOByQr4IHDrDfa8r+NWc1l
+                z1yAge6+HO0fPeoMHtqz/1TIRoGkexQ+2E/YeidUOtta1Nj0SNUqw1gEAzR2jzPCzWO+wpRcqd/QgsJA4fCTcQ2CZl2fS
+                /Mr4U8/r1InRR4cHPZ9OLUcNe90BovusmbxjmrDDnPdW8UN9UtPpsit15Nja8LGlkupQf8xAv1Y2e/eGpN57+dp3fyEgI
+                S5oVVSUAAAAAElFTkSuQmCC"
+        />
+
+        <h1 class="month-name"></h1>
+
+        <img class="right-arrow-month" 
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAd9JRE
+            FUSEvFVsFRAzEMlDshlUA6SSoBKiFUEqiEdCJuM5JHJ0u2L5CJZzJ53J1Xu17JW+hBqzwIlzYDM/MTEb0QEf4vUvillPK1hcQ
+            UsIAdiOi1szmKAPjnTBFd4EnAqJYTEb2XUlSR5p0UWEDPIql+CEbfYAZW8g4kx+95kR6q6ALoPgMPgWXDH7fJcSRhUCzAw+8y
+            YDCFgbAg2duscYLjCZk3wMz8YSTbBGqLY2YUq2Y8lVKO9vkKmJnBEmyx0CK7Wab+PWEOEtizkdwDW7YwRrc3wap3DM4rMOReC
+            /TAMBQc2kgTMecFeeQBZla/rBSswE7mqbMV4K4B3VlXFS0wehBSY6EFMATqksI8cfVDCu4I1X0z4J1vfMOu57dGKXfO9bkFtv
+            a/FbhRClWaokPGtpUaR09InYGGR/hf5gpBhW2opAVGG+l8XvVcdqgiYQoqwHU2lKXpsz6uPZcNd+f0g3d/0Anq/NVs8APEsv7
+            TyBS29rJZ+WZ0SUxNsGSqzV8SUiVYawDAcEeUmb4WA0OFyt07CKCO8LLZEn3AXn/X+CMSa+pE9NHwcL1Wewa9V9gbXjJb4i3S
+            hA1z3lNXP8iVmqbLsI9HaUMGPl5TSTXU3yfQjwq65fmU1LdsPPrmF6ObJy6OJDIKAAAAAElFTkSuQmCC"
+        />
+
+        <h2 class="show-year"></h2>
+
+    </nav>
+
+    <section>
+        <table>
+            <tr>
+                <th>SUN</th>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THU</th>
+                <th>FRI</th>
+                <th>SAT</th>
+            </tr>
+            <tr>
+                <td class="top-row left-col"></td>
+                <td class="top-row"></td>
+                <td class="top-row"></td>
+                <td class="top-row"></td>
+                <td class="top-row"></td>
+                <td class="top-row"></td>
+                <td class="top-row right-col"></td>
+            </tr>
+            <tr>
+                <td class="left-col"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="right-col"></td>
+            </tr>
+            <tr>
+                <td class="left-col"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="today"></td>
+                <td></td>
+                <td class="right-col"></td>
+            </tr>
+            <tr>
+                <td class="left-col"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="right-col"></td>
+            </tr>
+            <tr>
+                <td class="bottom-row left-col"></td>
+                <td class="bottom-row"></td>
+                <td class="bottom-row"></td>
+                <td class="bottom-row"></td>
+                <td class="bottom-row"></td>
+                <td class="bottom-row"></td>
+                <td class="bottom-row right-col"></td>
+            </tr>
+        </table>
+    </section>
+
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    
+</body>
+</html>
