@@ -1,4 +1,4 @@
-//Default dates
+//Default dates 
 let localTime = new Date();
 let currentDate = localTime.getDate();
 let currentMonth = localTime.getMonth();
@@ -102,7 +102,7 @@ function monthView(){
 
     function setCurrentDate(){
         for (var i=weekday+1 ; i<tableMonth.length ; i++){
-            if((i==(currentDate-weekday-1))&&(currentMonth==localTime.getMonth())){
+            if((i==(currentDate-weekday-1))&&(currentMonth==localTime.getMonth())&&(currentYear==localTime.getFullYear())){
                 tableMonth[i].classList.add("today");
             } else {
                 tableMonth[i].classList.remove("today");
