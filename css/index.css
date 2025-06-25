@@ -65,14 +65,14 @@ nav img.right-arrow-month:hover {
     opacity: 1;
 }
 
-nav h2.show-year {  
+/* nav h2.show-year {  
     width: 100%;
     color: #e6dbdb;
     text-align: right;
     padding: 10px 40px 50px 0;
     font-weight: 200;
     letter-spacing: 1px;
-}
+} */
 
 table {
     border-collapse: collapse;

@@ -12,7 +12,8 @@ const monthThirty = [3,5,8,10]; //list of 30 day months as indices
 
 //Set the defaults to be displayed
 document.querySelector("h1.month-name").textContent = monthList[currentMonth]; 
-document.querySelector("h2.show-year").textContent = currentYear ;
+
+//document.querySelector("h2.show-year").textContent = currentYear ;
 
 //Shortcut to the first date
 function todayView(){
@@ -34,7 +35,7 @@ function todayView(){
 
         monthView(); //load dates again
         document.querySelector("h1.month-name").textContent = monthList[currentMonth]; 
-        document.querySelector("h2.show-year").textContent = currentYear ;
+        //document.querySelector("h2.show-year").textContent = currentYear ;
     });
 }
 
@@ -57,7 +58,7 @@ function monthToggle(){
             if(currentMonth>10){
                 currentMonth = 0;
                 currentYear++;
-                document.querySelector("h2.show-year").textContent = currentYear ;
+                //document.querySelector("h2.show-year").textContent = currentYear ;
             } else {
                 currentMonth++;
             }
@@ -78,7 +79,7 @@ function monthToggle(){
         if(currentMonth<=0){
             currentMonth = 11;
             currentYear--;
-            document.querySelector("h2.show-year").textContent = currentYear ;
+            //document.querySelector("h2.show-year").textContent = currentYear ;
         } else {
             currentMonth--;
         }
@@ -88,8 +89,22 @@ function monthToggle(){
         });
     }
 
+    function showYear(){
+        let dateDropdown = document.getElementById('date-dropdown');    
+        let earliestYear = currentYear-50;
+        let latestYear = currentYear+50;    
+        while (latestYear >= earliestYear) {      
+            let dateOption = document.createElement('option');          
+            dateOption.text = latestYear;      
+            dateOption.value = latestYear;        
+            dateDropdown.add(dateOption);      
+            latestYear -= 1;    
+        }
+    }
+
     nextMonth();
     lastMonth();
+    showYear();
     
     //document.querySelector("h2.show-year").textContent = currentYear ;
 }
