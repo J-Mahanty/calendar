@@ -92,7 +92,7 @@ table th {
 
 table td {
     height : 100px ;
-    border: 5px double rgba(28, 82, 83,.5);
+    border: 5px double rgba(3, 39, 40, 0.4);
     padding-right: 10px;
     font-size: 28px;
     text-align: right;
@@ -106,7 +106,7 @@ table td.top-row {
 
 table td.left-col , th:first-of-type{
     border-left: none;
-    color: #531c1c;
+    color: #ed0707;
 }
 
 table td.bottom-row {
@@ -118,6 +118,6 @@ table td.right-col {
 }
 
 table td.today {
-    background-color:rgba(28, 82, 83,.3);
+    background-color:rgba(59, 18, 102, 0.35);
     
 }
