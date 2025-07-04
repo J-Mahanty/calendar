@@ -101,8 +101,8 @@ function monthView(){
     let weekday = firstDay.getDay();
 
     function setCurrentDate(){
-        for (var i=weekday+1 ; i<tableMonth.length ; i++){
-            if((i==(currentDate-weekday-1))&&(currentMonth==localTime.getMonth())&&(currentYear==localTime.getFullYear())){
+        for (var i=weekday ; i<tableMonth.length ; i++){
+            if((tableMonth[i].innerHTML==currentDate.toString())&&(currentMonth==localTime.getMonth())&&(currentYear==localTime.getFullYear())){
                 tableMonth[i].classList.add("today");
             } else {
                 tableMonth[i].classList.remove("today");
@@ -152,8 +152,8 @@ function monthView(){
         }
     }
 
-    setCurrentDate();
     loadDates();
+    setCurrentDate();
 }   
 
 //Page load
