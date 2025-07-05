@@ -121,3 +121,25 @@ table td.today {
     background-color:rgba(59, 18, 102, 0.35);
     
 }
+
+/*##################################*/
+/*Style for smaller mobile  size*/
+/*##################################*/
+
+@media screen and (max-width: 576px) {
+
+    body {
+        width: 98%;
+        max-width: 98%;
+    }
+
+    nav h2.shortcut {
+        font-size: 20px;
+        padding: 16px 0 16px 5px;
+    }
+
+    nav h2.show-year {
+        padding: 16px 5px 16px 0;
+        font-size: 20px;
+    }
+}
