@@ -15,7 +15,7 @@ nav {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     background-color: #1c5253;
     margin: 30px 0 0;
@@ -25,10 +25,15 @@ nav {
 
 nav h2.shortcut {
     font-weight: 200;
-    width: 100%;
     color: #e6dbdb;
     text-align: left;
-    padding:10px 0 10px 50px;
+    padding:10px 50px;
+}
+
+nav .month-view {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0;
 }
 
 nav h2.shortcut:hover{
@@ -63,6 +68,11 @@ nav img.right-arrow-month {
 nav img.right-arrow-month:hover {
     cursor: pointer;
     opacity: 1;
+}
+
+nav .date-dropdown{
+    background-color: #1c5253;
+    width: 120px;
 }
 
 /* nav h2.show-year {  

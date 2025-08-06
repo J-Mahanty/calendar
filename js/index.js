@@ -89,22 +89,22 @@ function monthToggle(){
         });
     }
 
-    function showYear(){
-        let dateDropdown = document.getElementById('date-dropdown');    
-        let earliestYear = currentYear-50;
-        let latestYear = currentYear+50;    
-        while (latestYear >= earliestYear) {      
-            let dateOption = document.createElement('option');          
-            dateOption.text = latestYear;      
-            dateOption.value = latestYear;        
-            dateDropdown.add(dateOption);      
-            latestYear -= 1;    
-        }
-    }
-
+    // function showYear(){
+    //     let dateDropdown = document.getElementById('date-dropdown');    
+    //     let earliestYear = currentYear-50;
+    //     let latestYear = currentYear+50;    
+    //     while (latestYear >= earliestYear) {      
+    //         let dateOption = document.createElement('option');          
+    //         dateOption.text = latestYear;      
+    //         dateOption.value = latestYear;        
+    //         dateDropdown.add(dateOption);      
+    //         latestYear -= 1;    
+    //     }
+    // }
+    
     nextMonth();
     lastMonth();
-    showYear();
+    // showYear();
     
     //document.querySelector("h2.show-year").textContent = currentYear ;
 }
