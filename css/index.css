@@ -70,55 +70,14 @@ nav img.right-arrow-month:hover {
     opacity: 1;
 }
 
-nav .date-dropdown{
-    background-color: #1c5253;
+nav h2.show-year {  
     width: 120px;
-    color: #e6dbdb;
-    font-size: 24px;
-    font-weight: 200;
-    letter-spacing: 1px;
-    text-align: right;
-    font-family: Knewave, Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-nav .date-dropdown:hover{
-    cursor: pointer;
-}
-
-nav .date-dropdown li.hide-list{
-    display: none;
-    list-style-type: none;
-    width: 100%;
-    font-size: 18px;
-    background-color: #e6dbdb;
-    color: #1c5253;
-}
-
-nav .date-dropdown li.show-list{
-    display: none;
-    list-style-type: none;
-    width: 100%;
-    font-size: 18px;
-    background-color: #e6dbdb;
-    color: #1c5253;
-}
-
-nav .date-dropdown li:hover{
-    cursor: pointer;
-    background-color: #1c5253;
-    color: #e6dbdb;
-}
-
-
-/* nav h2.show-year {  
-    width: 100%;
+    padding: 10px 40px;
     color: #e6dbdb;
     text-align: right;
-    padding: 10px 40px 50px 0;
     font-weight: 200;
     letter-spacing: 1px;
-} */
+}
 
 table {
     border-collapse: collapse;
